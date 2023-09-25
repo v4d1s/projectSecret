@@ -1,24 +1,23 @@
-# untitled2
+# Project Secret
 
-## Project setup
+## Уставновка проекта
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Запуск бэка
+```
+cd .\server\
+node app.js
+```
+
+### Запуск фронта
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Доступ к сайту
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+http://localhost:8081/
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

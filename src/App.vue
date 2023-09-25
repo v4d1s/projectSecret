@@ -1,30 +1,37 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="app">
+    <div class="navbar">
+      <h1>Secret</h1>
+      <router-link class="router-link" to="/">Домашняя страница</router-link>
+      <router-link class="router-link" to="/text/add">Создать скрытый текст</router-link>
+    </div>
+    <router-view></router-view>
+  </div>
 </template>
 
+<script>
+export default {
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.app {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60em
 }
-
-nav {
-  padding: 30px;
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.router-link {
+  padding: 15px 10px;
+  color: black;
+  font-size: 18px;
 }
 </style>
